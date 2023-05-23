@@ -8,12 +8,12 @@
 }
 @font-face {
     font-family: 'Beyno';
-    src: url(Assets/Polices/FontsFree-Net-BEYNO.ttf);
+    src: url(/Assets/Polices/FontsFree-Net-BEYNO.ttf);
 
 }
 @font-face {
-    font-family: 'WakandaForever';
-    src: url(Assets/Polices/WakandaForever-Regular.ttf);
+    font-family: 'Wakanda';
+    src: url(/Assets/Polices/WakandaForever-Regular.ttf)
 
 }
 @font-face {
@@ -59,6 +59,9 @@ h2{
 
 body{
     background-image: url(/Assets/Illustrations-logo/All-pages/arrière_plan.png);
+    background-color: radial-gradient(126.67% 350.28% at -21.35%
+0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64,
+0.837641) 94.57%, rgba(2, 23, 64, 0) 100%)
 }
 
 .container{
@@ -72,6 +75,49 @@ body{
 }
 .class-voir-plus{
     text-decoration: underline;
+}
+
+.head-social{
+    /* border: 2px solid red; */
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+    align-items: center;
+    width: 20px;
+    justify-content: space-between;
+    position: absolute;
+    left: 42px;
+    top: 255px;
+
+}
+.head-social img{
+    width: 18px;
+    height: auto;
+}
+.head-social a{
+    text-decoration: none;
+}
+.head-social a:hover{
+    filter:invert(100%) sepia(1%) saturate(0%) hue-rotate(219deg) brightness(105%) contrast(100%);
+}
+.border-left{
+    border-left: 4px solid var(--coleur-gris);
+    position: absolute;
+    left: 30px;
+    height: 375px;
+    margin: 0px;
+}
+.border-right{
+    border-left: 4px solid var(--coleur-gris) ;
+    position: absolute;
+    left: 50px;
+    height: 250px;
+    margin: 0px;
+
+}
+
+.fix-box{
+    position: fixed;
 }
 
 /********************************************************************************/
@@ -130,47 +176,121 @@ menu en souligné et en couleur (violet).*/
 }
 
 /********************************************************************************/
-/*****************************FIRST SECTION**************************************/
+/**********************************FOOTER****************************************/
 /********************************************************************************/
 
-.head-social{
-    /* border: 2px solid red; */
-    display: flex;
-    height: 120px;
-    flex-direction: column;
-    align-items: center;
-    width: 20px;
-    justify-content: space-between;
-    position: absolute;
-    left: 42px;
-    top: 255px;
+footer{
+    height: 475px;
+    background-image: url(/Assets/Illustrations-logo//All-pages/back_footer.png);
+}
+.container-footer{
+
+    width: 80%;
+    height: 475px;
+    margin: 0 auto;
+    /* border: 3px solid white; */
+        
 
 }
-.head-social img{
-    width: 18px;
+
+.content-D{
+    /* border: 3px solid blue; */
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content-D-a{
+    /* border: 3px solid green; */
+    background-image: url(/Assets/Illustrations-logo/All-pages/footer1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 270px;
+    width: 231px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 110px;
+    /* border: 2px solid white; */
+}
+.content-D-a img{
+    margin-bottom: 10px;
+    height: auto;
+    width: 120px;
+}
+.content-D-b{
+    /* border: 3px solid red; */
+    height: 270px;
+    width: 500px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.content-D-b-a{
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content-D-b-b{
+    /* border: 3px solid aqua; */
+    margin-bottom: 50px;
+}
+
+
+.content-D-b-a-b p, .content-D-b-a-a .footer-pages{
+    /* order: 3px solid blue; */
+    font-size: 16px;
+    letter-spacing :4px;
+    margin-bottom: 20px;
+}
+.content-D-b-a-b .footer-social{
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.content-D-b-a-b .footer-social img{
+    /* border: 3px solid green; */
+    width: 35px;
     height: auto;
 }
-.head-social a{
-    text-decoration: none;
+.footer-wakanda, .footer-apropos{
+    font-size: 12px;
 }
-.head-social a:hover{
-    filter:invert(100%) sepia(1%) saturate(0%) hue-rotate(219deg) brightness(105%) contrast(100%);
-}
-.border-left{
-    border-left: 4px solid var(--coleur-gris);
-    position: absolute;
-    left: 30px;
-    height: 375px;
-    margin: 0px;
-}
-.border-right{
-    border-left: 4px solid var(--coleur-gris) ;
-    position: absolute;
-    left: 50px;
-    height: 250px;
-    margin: 0px;
 
+.content-D-a{
+    transition: 500ms;
 }
+.content-D-a:hover{
+    transform: scale(1.2);
+    /* z-index: 2; */
+}
+.content-D-b-a-a a:hover{
+    text-decoration:underline;
+    color: var(--coleur-blanc);
+}
+
+/*******************************************************************************************************************/
+/*******************************************************************************************************************/
+/********************************************PAGE ACCUEIL************************************************************/
+/*******************************************************************************************************************/
+/*******************************************************************************************************************/
+
+/********************************************************************************/
+/**************************FIRST SECTION ACCUIL**********************************/
+/********************************************************************************/
+
+
 .content-A{
     margin-top: 20px;
     display: flex;
@@ -239,7 +359,7 @@ menu en souligné et en couleur (violet).*/
 }
 
 /********************************************************************************/
-/*****************************SECONDE SECTION************************************/
+/*************************SECONDE SECTION ACCUEIL********************************/
 /********************************************************************************/
 
 .content-B{
@@ -344,17 +464,19 @@ width: 355px;
 
 
 /********************************************************************************/
-/*****************************THIRD SECTION**************************************/
+/*****************************THIRD SECTION ACCUEI*******************************/
 /********************************************************************************/
 
 #third-section-accueil {
-    height: 900px;
+    height: 810px;
     /* width: 100%; */
 }
 
 .contact {
     background-image: url(/Assets/Illustrations-logo/Accueil/Pantherhome7.png);
     height: 100%;
+    /* width: auto; */
+    background-size: contain;
 }
 
 .container-contact {
@@ -429,109 +551,290 @@ input[type=submit]:hover{
     box-shadow: 0px 0px 20px var(--coleur-bleu-marine);
 }
 
+
+
+/*******************************************************************************************************************/
+/*******************************************************************************************************************/
+/********************************************PAGE WAKANDA***********************************************************/
+/*******************************************************************************************************************/
+/*******************************************************************************************************************/
+
 /********************************************************************************/
-/**********************************FOOTER****************************************/
+/**************************FIRST SECTION WAKANDA*********************************/
 /********************************************************************************/
 
-footer{
-    height: 475px;
-    background-image: url(/Assets/Illustrations-logo//All-pages/back_footer.png);
-}
-.container-footer{
-
-    width: 80%;
-    height: 475px;
-    margin: 0 auto;
-    /* border: 3px solid white; */
-        
-
-}
-
-.content-D{
-    /* border: 3px solid blue; */
-    width: 90%;
-    height: 70%;
-    margin: auto;
-    padding-top: 100px;
+#first-section-wakanda{
+    /* border: 2px solid red;
+    background-color: blue; */
+    height: 900px;
+}   
+.content-E{
+    /* border: 2px solid orangered; */
+    /* background-color: yellow; */
+    background-image: url(/Assets/Illustrations-logo/Wakanda/Pantherwakanda1.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    
 }
-.content-D-a{
-    /* border: 3px solid green; */
-    background-image: url(/Assets/Illustrations-logo/All-pages/footer1.png);
-    background-size: contain;
-    height: 270px;
-    width: 231px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 110px;
+
+.content-E .container h2{
+    text-align: justify;
+    /* border: 2px solid bisque; */
+    width: 460px;
+    font-size: 45px;
+    margin-bottom: 5px;
 }
-.content-D-a img{
+.content-E .container .text-wakanda{
+    font-family: 'Wakanda';
+    text-align: justify;
+    font-size: 31px;
+    color:var(--coleur-gris);
+    /* border: 2px solid bisque; */
+    width: 315px;
+    margin-bottom: 25px;
+}
+.content-E .container p{
+    text-align: justify;
+    /* border: 2px solid bisque; */
+    width: 315px;
     margin-bottom: 10px;
 }
-.content-D-b{
-    /* border: 3px solid red; */
-    height: 270px;
-    width: 500px;
-    margin-left: 100px;
+
+/********************************************************************************/
+/**************************SECOND SECTION WAKANDA********************************/
+/********************************************************************************/
+
+
+.back-image{
+    /* border: 2px solid chartreuse; */
+    background-image: url(/Assets/Illustrations-logo/Wakanda/Pantherwakanda2.png);
+    background-size: 1210px;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    background-position: center top;
+    margin-top: -130px
+}
+
+.content-F{
+/* border: 2px solid red;
+background-color: rgb(243, 243, 247); */
+display: flex;
+justify-content: space-between;
+align-items:start;
+text-align: justify;
+padding-top:200px;
+}
+
+.content-F-a, .content-F-b{
+    width: 440px;
+}
+
+.content-F div{
+    margin-bottom: 40px;
+
+}
+.content-F p,.content-F h2{
+    margin-bottom: 20px;
+
+}
+
+.content-F-a-b{
+    /* border: 2px solid rgb(0, 225, 255);
+    background-color: rgb(255, 123, 0); */
+    height: 240px;
+}
+video{
+    height: 100%;
+    width: 100%;
+}
+
+.content-F-b-d{
+    /* border: 2px solid rgb(9, 255, 0);
+    background-color: rgb(255, 174, 0); */
+    height: 240px;
+}
+.content-F-b-d img{
+    width: 100%;
+}
+
+/*******************************************************************************************************************/
+/*******************************************************************************************************************/
+/********************************************PAGE ENIGME***********************************************************/
+/*******************************************************************************************************************/
+/*******************************************************************************************************************/
+
+/********************************************************************************/
+/**************************FIRST SECTION ENIGME**********************************/
+/********************************************************************************/
+
+#first-section-enigme{
+    height: 900px;
+    width: auto;
+}
+.back-image-enigme{
+    background-image: url(/Assets/Illustrations-logo/Enigme/Pantherenigme1.png);
+    height: 100%;
+    background-size: contain;
+    background-position: left top;
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+    margin-left: -50px;
+    margin-top: -150px;
+    /* background-color: blue;
+    height: auto;
+    width: 100px; */
+}
+.content-G{
+    /* border: 2px solid green; */
+    /* background-color: green; */
+    padding-top: 350px;
+    display: flex;
+    justify-content: end;
+}
+
+.content-G-a{
+    /* border: 2px solid gold; */
+    /* background-color:  orangered; */
+    width: 38%;
+    margin-right: 8%;
+}
+.content-G-a-a{
+    /* border: 2px solid aqua; */
+    /* background-color: palevioletred; */
+    width: 80%;
+    font-family: 'Panthera';
+    font-size: 22px;
+}
+.content-G-a-a h2{
+    font-size: 48px;
+    text-align: justify;
+}
+.content-G-a-b{
+    /* border: 2px solid purple; */
+    background-image: url(/Assets/Illustrations-logo/Enigme/Pantherenigme2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 325px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    margin-top: 20px;
+    /* background-color: palevioletred; */
+}
+.content-G-a-b p{
+    /* border: 2px solid white; */
+    margin-top: 113px;
+    margin-left: 60px;
+    width: 80%;
+    text-align: justify;
+}
+.line{
+    background-image: url(/Assets/Illustrations-logo/Enigme/Pantherenigme3.png);
+    height: 4px;
+    width: 122%;
+    /* border: 1px solid red; */
 }
 
-.content-D-b-a{
-    /* border: 3px solid yellow; */
+/********************************************************************************/
+/**************************SECOND SECTION ENIGME*********************************/
+/********************************************************************************/
+
+
+.content-H{
+    /* border: 2px solid yellow; */
+    margin-top:50px;
+    margin-bottom: 100px;
+    height: 500px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-
 }
 
-.content-D-b-b{
-    /* border: 3px solid aqua; */
-    margin-bottom: 50px;
+.content-H-a{
+    /* border: 2px solid white; */
+    width: 675px;
+    margin-left: 205px;
+    letter-spacing: 7px;
+}
+.content-H-a h2{
+    /* border: 2px solid blue; */
+    font-family: 'Wakanda';
+    font-size: 22px;
+    text-align: justify;
 }
 
-
-.content-D-b-a-b p, .content-D-b-a-a .footer-pages{
-    /* order: 3px solid blue; */
-    font-size: 16px;
-    letter-spacing :4px;
-    margin-bottom: 20px;
-}
-.content-D-b-a-b .footer-social{
-    /* border: 3px solid red; */
+.content-H-b{
+    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
-}
-.content-D-b-a-b .footer-social img{
-    /* border: 3px solid green; */
-    width: 35px;
-    height: auto;
-}
-.footer-wakanda, .footer-apropos{
-    font-size: 12px;
+    width: 100%;
+
 }
 
-.content-D-a{
-    transition: 500ms;
+.content-H-b-a{
+    /* border: 2px solid red; */
+    margin-left: 205px;
+    width: 30%;
 }
-.content-D-a:hover{
-    transform: scale(1.2);
-    /* z-index: 2; */
+.content-H-b-b{
+    /* border: 2px solid purple; */
+    width: 40%;
+    height: 300px;
+    margin-bottom: 105px;
+    margin-right: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/Assets/Illustrations-logo/Enigme/Pantherenigme2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.content-D-b-a-a a:hover{
-    text-decoration:underline;
-    color: var(--coleur-blanc);
+.content-H-b-b p {
+    margin-bottom: 20px;
+    width: 50%;
+
+    
+}
+.content-H-b-b p:first-child {
+    margin-bottom: 20px;
+    width: 14%;
+    
+}
+.content-H-b-b p {
+    margin-bottom: 20px;
+    width: 50%;
 }
 
-g{
-    color: var(--coleur-violet-bleu);
-    filter:invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-    filter:invert(10%) sepia(75%) saturate(5870%) hue-rotate(251deg) brightness(91%) contrast(84%);
+.content-H-b-a-a span{
+    font-family: 'Wakanda';
 }
-
+.content-H-b-a-a p{
+    margin-bottom: 10px;
+}
+.content-H-b-a-b{
+    /* border: 2px solid hotpink; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+}
+.content-H-b-a-b p{
+    margin-left: -280px;
+    margin-bottom: 10px;
+}
+.content-H-b-a-b input[type='text']{
+    border-color: var(--coleur-gris);
+    margin-bottom: 50px;
+    width: 95%;
+}
+.content-H-b-a-b input[type='text']::placeholder{
+    color: var(--coleur-gris);
+}
+.content-H-b-a-b input[type='submit']:hover{
+    box-shadow: 0 0 20px var(--coleur-blanc-casse);
+}

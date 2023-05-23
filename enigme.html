@@ -8,15 +8,17 @@
         <title>Enigme</title>
     </head>
     <body>
-         <!--en tête du page-->
+          <!--en tête du page-->
         <header>
-            <div class="container">
+            <div class="container-header">
                 <div class="en-tete">
                     <div class="sayna-marvel">
-
-                        <img src="Assets/Illustrations-logo/All-pages/icon_SAYNA.png" alt="icon sayna">
-                        <img src="Assets/Illustrations-logo/All-pages/icon_x.png" alt="icon x">
-                        <img src="Assets/Illustrations-logo/All-pages/icon_MARVEL.png" alt="icon marvel">
+                        <a href="index.html">
+                            <img class="icon-sayna" src="Assets/Illustrations-logo/All-pages/icon_SAYNA.png" alt="icon sayna">
+                        <img class="icon-x" src="Assets/Illustrations-logo/All-pages/icon_x.png" alt="icon x">
+                        <img class="icon-marvel" src="Assets/Illustrations-logo/All-pages/icon_MARVEL.png" alt="icon marvel">    
+                        </a>
+                        
         
                     </div>
                     <nav>
@@ -31,53 +33,56 @@
         </header>
 
         <!-- premier section du page-->
-        <section>
-            <div>
-                <div>
-                    <img src="Assets/Illustrations-logo/Enigme/Pantherenigme1.png" alt="image okoye">
-                </div>
-                <div>
-                    <h2>Releve le defi des dora milaje</h2>
-                </div>
-                <div>
-                    <p>es Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde 
-                        rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la 
-                        vie. Leur Générale, Okoyé est également la dirigeante des forces armées et des 
-                        renseignements wakandais. <br>
-                        Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, 
-                        et apprend par la même occasion la première valeur d’une Dora Milaje !</p>
-                </div>
+        <section id="first-section-enigme">
+            <div class="back-image-enigme">
+                <div class="content-G">
+                    <div class="content-G-a">
+                        <div class="content-G-a-a">
+                            <h2>Releve le defi des dora milaje</h2>
+                        </div>
+                        <div class="content-G-a-b">
+                            <p>Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde 
+                                rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la 
+                                vie. Leur Générale, Okoyé est également la dirigeante des forces armées et des 
+                                renseignements wakandais. <br>
+                                Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, 
+                                et apprend par la même occasion la première valeur d’une Dora Milaje !</p>
+                                <div class="line">
 
-
+                                </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </section>
 
         <!--deuxième section du page-->
-        <section>
-            <div>
+        <section id="second-section-enigme">
+            <div class="content-H">
 
-                <div>
+                <div class="content-H-a">
                     <h2>“ SI JE SUIS FIDELE C’EST A CE TRONE 
                         PEU IMPORTE QUI MONTE DESSUS ” </h2>
                 </div>
-                <div>
-                    <div>
-                        <div>
-                            <p>Voici la transicription de l’alphabet :</p>
-                            <p>A = A ; B = b ; c = c ; d = d ; e = e ; f = f ; g = g ; h = h ; i = i ; j = j ; 
+                <div class="content-H-b">
+                    <div class="content-H-b-a">
+                        <div class="content-H-b-a-a">
+                            <p >Voici la transicription de l’alphabet :</p>
+                            <p>A =<span>A</span> ; B = <span>B</span> ; C = <span>C</span> ; D = <span>D</span> ; E = <span>E</span> ; F = <span>F</span> ; G = <span>G</span> ; H = <span>H</span> ; I = <span>I</span> ; J = <span>J</span> ; 
 
-                                k = k ; l = l ; m = m ; n = n ; o = o ; p = p ; q = q ; r = r ; s = s ; t = t ;
+                                K = <span>K</span> ; L = <span>L</span> ; M = <span>M</span> ; N = <span>N</span> ; O = <span>O</span> ; P = <span>P</span> ; Q = <span>Q</span> ; R = <span>R</span> ; S = <span>S</span> ; T = <span>T</span> ;
                                 
-                                u = u ; w = w ; x = x ; y = y ; z = z </p>
+                                U = <span>U</span> ; W = <span>V</span> ; X = <span>X</span> ; Y = <span>Y</span> ; Z = <span>Z</span> </p>
                         </div>
-                        <div>
+                        <div class="content-H-b-a-b">
                             <p>Alors, as tu la réponse ?</p>
                             <label for="reponse"></label>
-                            <input type="text" name="reponse">
-                            <input type="submit" value="ENVOYER">
+                            <input type="text" name="reponse" placeholder="Réponse">
+                            <input type="submit" value="ENVOYER" >
                         </div>
                     </div>
-                    <div>
+                    <div class="content-H-b-b">
                         <p>Le savais tu ? </p>
                         <p>Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français est 
                             la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans une 
@@ -91,27 +96,35 @@
 
         <!-- pied du page-->
         <footer>
-            <div>
-
-                <div>
-                    <img src="Assets/Illustrations-logo/All-pages/footer2.png" alt="logo sayna x marvel">
-                </div>
-                <div>
-                    <p>PAGAS</p>
-                    <p>À propos</p>
-                    <p>Wakanda</p>
-                </div>
-                <div>
-                    <p>RETROUVEZ NOUS</p>
-                    <div>
-                        <img src="Assets/Illustrations-logo/All-pages/footer3.png" alt="logo facebook">
-                        <img src="Assets/Illustrations-logo/All-pages/footer4.png" alt="logo instagram">
-                        <img src="Assets/Illustrations-logo/All-pages/footer5.png" alt="logo twitter">
-                        <img src="Assets/Illustrations-logo/All-pages/footer6.png" alt="logo tiktok">
+            <div class="container-footer">
+                <div class="content-D">
+                    <div class="content-D-a">
+                        <a href="index.html"><img src="Assets/Illustrations-logo/All-pages/footer2.png" alt="logo sayna x marvel"></a>
+                    </div>
+                    <div class="content-D-b">
+                        <div class="content-D-b-a">
+                            <div class="content-D-b-a-a">
+                                <p class="footer-pages">PAGES</p>
+                                <a href="enigme.html"><p class="footer-apropos">À propos</p></a>
+                               <a href="wakanda.html"><p class="footer-wakanda">Wakanda</p></a> 
+                            </div>
+                
+                            <div class="content-D-b-a-b">
+                                <p>RETROUVEZ NOUS</p>
+                                <div class="footer-social">
+                                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations-logo/All-pages/footer3.png" alt="logo facebook"></a>
+                                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations-logo/All-pages/footer4.png" alt="logo instagram"></a>
+                                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations-logo/All-pages/footer5.png" alt="logo twitter"></a>
+                                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations-logo/All-pages/footer6.png" alt="logo tiktok"></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-D-b-b">
+                            <p>2022 Tous droits réservés Politique de confidentialité Conditions d’utilisation</p>
+                        </div>
                     </div>
                 </div>
-                    <p>2022 Tous droits réservés Politique de confidentialité Conditions d’utilisation</p>
-
             </div>
         </footer>
         
