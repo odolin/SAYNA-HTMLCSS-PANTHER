@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Assets/style.css">
+        <link rel="stylesheet" href="Assets/responsive-style.css">
         <title>Accueil</title>
     </head>
     <body>
@@ -34,13 +35,13 @@
                         
         
                     </div>
-                    <nav>
+                    <nav class="nav-link">
                         <ul>
                             <li><a class="page-actif" href="index.html">ACCUEIL</a></li>
                             <li><a class="page-inactif" href="wakanda.html">WAKANDA</a></li>
                             <li><a class="page-inactif" href="enigme.html">ENIGME</a></li>
                         </ul>
-                    </nav>   
+                    </nav>
                 </div>
             </div>
         </header>
@@ -67,39 +68,40 @@
                     </div>
                 
                 </div>
-
-                <div class="rectangle">
+                <div class="scroll">
+                    <div class="rectangle">
     
-                    <div class="personnage">
-                        <img src="Assets/Illustrations-logo/Accueil/Pantherhome2.png" alt="image killmonger">
+                        <div class="personnage">
+                            <img src="Assets/Illustrations-logo/Accueil/Pantherhome2.png" alt="image killmonger">
+                        </div>
+                        <div class="biographie">
+                            <h2>KILLMONGER</h2>
+                            <p>a sauvagerie de N'Jadaka alors qu'il servait dans une 
+                                unité d'opérations noires de l'armée américaine lui a 
+                                valu le surnom de Killmonger. D’origine Wakandaise, 
+                                et se sentant abandoné par sa nation, il cherche à 
+                                détroner T’Challa dans une quête vers le pourvoir.</p>
+                            <p class="class-voir-plus">Voir plus ></p>
+                        </div>
+    
+                        <div class="personnage">
+                            <img src="Assets/Illustrations-logo/Accueil/Pantherhome3.png" alt="image okoye"">
+                        </div>
+                        <div class="biographie">
+                            <h2>OKOYE</h2>
+                            <p>Okoye est le général des Dora Milaje (groupe d’élite 
+                                de femmes guerrières) et le chef des forces armées et 
+                                des renseignements wakandais. Témoin du 
+                                couronnement de T'Challa, elle se joint à lui dans de 
+                                nombreuses aventures.</p>
+                            <p class="class-voir-plus">Voir plus ></p>
+                        </div>
+    
+                        <div class="personnage">
+                            <img src="Assets/Illustrations-logo/Accueil/Pantherhome4.png" alt="image panther girl">
+                        </div>
+                       
                     </div>
-                    <div class="biographie">
-                        <h2>KILLMONGER</h2>
-                        <p>a sauvagerie de N'Jadaka alors qu'il servait dans une 
-                            unité d'opérations noires de l'armée américaine lui a 
-                            valu le surnom de Killmonger. D’origine Wakandaise, 
-                            et se sentant abandoné par sa nation, il cherche à 
-                            détroner T’Challa dans une quête vers le pourvoir.</p>
-                        <p class="class-voir-plus">Voir plus ></p>
-                    </div>
-
-                    <div class="personnage">
-                        <img src="Assets/Illustrations-logo/Accueil/Pantherhome3.png" alt="image okoye"">
-                    </div>
-                    <div class="biographie">
-                        <h2>OKOYE</h2>
-                        <p>Okoye est le général des Dora Milaje (groupe d’élite 
-                            de femmes guerrières) et le chef des forces armées et 
-                            des renseignements wakandais. Témoin du 
-                            couronnement de T'Challa, elle se joint à lui dans de 
-                            nombreuses aventures.</p>
-                        <p class="class-voir-plus">Voir plus ></p>
-                    </div>
-
-                    <div class="personnage">
-                        <img src="Assets/Illustrations-logo/Accueil/Pantherhome4.png" alt="image panther girl">
-                    </div>
-                   
                 </div>
             </section>
 
@@ -209,8 +211,7 @@
                 <div class="contact">
                     <div class="container-contact">
 
-                        
-                            <div class="content-C">
+                        <div class="content-C">
                                 <p>Besoin de l’intervention du Wakanda ?</p>
                                 <p class="p-contact">Contactez nous !</p>
                                 <label for="name"></label>
@@ -219,9 +220,13 @@
                                 <input type="email" name="email" placeholder="Email">
                                 <label for="commentaire"></label>
                                 <textarea name="commentaire" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                                <input type="submit" value="ENVOYER">
-                            </div>
+                                <input type="submit" value="ENVOYER" class="btn" onclick="openPopup()">
                         </div>
+                        <div class="popup-mssg" id="popup-mssg">
+                           <p>L'operation à été effectuer</p>
+                           <button type="button" onclick="closePopup()">OK</button> 
+                        </div>
+                        
                     </div>
 
                 </div>
@@ -261,5 +266,14 @@
                 </div>
             </div>
         </footer>
+        <script>
+            let popupmssg = document.getElementById("popup-mssg");
+            function openPopup(){
+                popupmssg.classList.add("open-popup")
+            }
+            function closePopup(){
+                popupmssg.classList.remove("open-popup")
+            }
+        </script>
     </body>
 </html>

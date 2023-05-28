@@ -233,6 +233,40 @@ h2 {
     overflow: auto;
   }
 
+
+.popup-mssg{
+    width: 400px;
+    background-color: #ffffffc9;
+    border-radius: 10px;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    visibility: hidden;
+}
+.popup-mssg p{
+    color: #021740;
+    font-size: 30px;
+}
+.popup-mssg button{
+    margin-top: 10px;
+    width: 20%;
+    padding: 10px 0;
+    border: 0;
+    border-radius: 5px;
+    color: var(--coleur-bleu-marine);
+    background-color: var(--coleur-gris);
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-popup{
+    visibility: visible;
+}
+
+
+
 /********************************************************************************/
 /*****************************HEADER*********************************************/
 /********************************************************************************/
@@ -431,16 +465,32 @@ footer{
  width: 119%;
 }
 
-.rectangle{
-    margin-top: -75px;
+.scroll{
+    margin-top: -90px;
     margin-left: 10%;
+    /* background-color: var(--coleur-bleu-marine); */
+    height: 320px;
+    overflow: hidden;
+    overflow: scroll;
+    overflow-y: hidden;
+    /* border: 2px solid green; */
+
+}
+.rectangle{
+        /* margin-top: -75px; */
+    /* margin-left: 10%; */
     background-color: var(--coleur-bleu-marine);
     display: flex;
     height: 250px;
+    width: 130%;
+    margin-top: 25px;
     align-items: center;
     justify-content: space-evenly;
+    /* border: 2px solid red; */
 
 }
+
+
 .personnage img{
     width: 100%;
     height: 100%;
@@ -564,8 +614,9 @@ width: 355px;
 
 .apropos{
     width: 80%;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
     font-size: 12px;
+    line-height: 20px;
 }
 .gras{
     font-weight: bold;
@@ -589,7 +640,9 @@ width: 355px;
     background-image: url(/Assets/Illustrations-logo/Accueil/Pantherhome7.png);
     height: 100%;
     /* width: auto; */
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .container-contact {

@@ -1,0 +1,156 @@
+
+
+
+@media screen and (max-width:800px) {
+
+/********************************************************************************/
+/**************************RESPONSIVE ACCUEIL************************************/
+/********************************************************************************/
+
+
+
+.fix-box{
+ display: none;
+
+}
+.scroll{
+    margin: 0 20px;
+}
+.rectangle{
+    width: 250%;
+}
+.biographie{
+    width: 17%;
+}
+.content-B{
+    flex-direction: column;
+}
+.content-B-a{
+    width: 100%;
+    margin: 0px;
+}
+.content-B-b{
+    margin-top: 50px;
+}
+.cercle-panther{
+    margin-top: 100px;
+}
+.contact{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content-C{
+    width: 100%;
+    border-radius: 80px;
+}
+.content-D-a{
+    margin-left: 0px;
+}
+.content-D-a img{
+    width: 50px;   
+}
+.content-D-b{
+    margin-left: 50px;
+}
+.content-D-b-b{
+    position: relative;
+    width: 200px;
+    right: 95px;
+    top: 60px;
+}
+.content-D-b-a-b p{
+    display: none;
+}
+.content-D-b-a-b .footer-social{
+    flex-direction: column;
+}
+/********************************************************************************/
+/**************************RESPONSIVE WAKANDA************************************/
+/********************************************************************************/
+
+.content-E .container h2{
+    width:100% ;
+}
+.content-F{
+    flex-direction: column;
+}
+.content-F-a{
+    width: 100%;
+}
+.content-F-b{
+    width: 100%;
+}
+
+
+}
+/********************************************************************************/
+/***************************RESPONSIVE ENIGME************************************/
+/********************************************************************************/
+@media screen and (max-width:1340px) {
+.back-image-enigme{
+    background-position: center;
+    background-size: cover;
+    margin-left: 0;
+}
+.content-G{
+    justify-content: center;
+}
+.content-G-a{
+    width: 80%;
+    margin: 0;
+}
+.content-G-a-a h2{
+    text-align: left;
+}
+.content-G-a-b{
+    width: 100%;
+    background-size: contain;
+    background-position:center;
+}
+.line {
+    width: 112%;
+}
+.content-H{
+    margin-bottom: 300px;
+}
+.content-H-a {
+    /* border: 2px solid white; */
+    width: 90%;
+    margin:auto;
+    letter-spacing: 7px;
+}
+.content-H-b{
+    flex-direction: column;
+    margin-top: 30px;
+}
+.content-H-b-a {
+    /* border: 2px solid red; */
+    margin-left: 0px;
+}
+.content-H-b-a-b {
+    /* border: 2px solid hotpink; */
+    margin-top: 10px;
+
+}
+.content-H-b-b {
+        /* border: 2px solid purple; */
+        width: 40%;
+        width: 100%;
+        background-size: contain;
+       background-position:center;
+       margin: 0;
+}
+}
+@media screen and (min-width:800px) and (max-width:1340px){
+    .content-G-a-b p{
+        width: 45%;
+        margin-left: 0;
+        margin: auto;
+    }
+    .content-H-b-b p{
+        width: 45%;
+        margin-left: 0;
+    }
+    
+}
