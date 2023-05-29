@@ -22,13 +22,16 @@
                         
         
                     </div>
-                    <nav>
+                    <nav class="nav-link">
                         <ul>
                             <li><a class="page-inactif" href="index.html">ACCUEIL</a></li>
                             <li><a class="page-inactif" href="wakanda.html">WAKANDA</a></li>
                             <li><a class="page-actif" href="enigme.html">ENIGME</a></li>
                         </ul>
-                    </nav>   
+                    </nav> 
+                    <div class="menu-btn">
+                        MENU
+                    </div>  
                 </div>
             </div>
         </header>
@@ -128,6 +131,12 @@
                 </div>
             </div>
         </footer>
-        
+        <script>
+            const menubtn = document.querySelector(".menu-btn")
+            const nav = document.querySelector(".nav-link")
+            menubtn.addEventListener('click',()=>{
+                nav.classList.toggle('mobile-menu')
+            })
+        </script>
     </body>
 </html>
