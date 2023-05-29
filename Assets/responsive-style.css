@@ -29,7 +29,8 @@
 
 
 .nav-link{
-    position: absolute;
+    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(243, 243, 243, 0.2);

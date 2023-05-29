@@ -58,10 +58,10 @@ h2{
 }
 
 body{
-    background-image: url(/Assets/Illustrations-logo/All-pages/arrière_plan.png);
+    background:url(Illustrations-logo/All-pages/arrier-plan.png);
     background-color: radial-gradient(126.67% 350.28% at -21.35%
 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64,
-0.837641) 94.57%, rgba(2, 23, 64, 0) 100%)
+0.837641) 94.57%, rgba(2, 23, 64, 0) 100%);
 }
 
 .container{
@@ -254,7 +254,7 @@ menu en souligné et en couleur (violet).*/
 
 footer{
     height: 475px;
-    background-image: url(/Assets/Illustrations-logo//All-pages/back_footer.png);
+    background: url(Illustrations-logo//All-pages/back_footer.png);
 }
 .container-footer{
 
@@ -278,7 +278,7 @@ footer{
 }
 .content-D-a{
     /* border: 3px solid green; */
-    background-image: url(/Assets/Illustrations-logo/All-pages/footer1.png);
+    background: url(Illustrations-logo/All-pages/footer1.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -563,7 +563,7 @@ width: 355px;
 }
 
 .contact {
-    background-image: url(/Assets/Illustrations-logo/Accueil/Pantherhome7.png);
+    background: url(Illustrations-logo/Accueil/Pantherhome7.png);
     height: 100%;
     /* width: auto; */
     background-size: cover;
@@ -665,7 +665,7 @@ input[type=submit]:hover{
 .content-E{
     /* border: 2px solid orangered; */
     /* background-color: yellow; */
-    background-image: url(/Assets/Illustrations-logo/Wakanda/Pantherwakanda1.png);
+    background: url(Illustrations-logo/Wakanda/Pantherwakanda1.png);
     height: 100%;
     background-size: cover;
     background-position: center top;
@@ -704,7 +704,7 @@ input[type=submit]:hover{
 
 .back-image{
     /* border: 2px solid chartreuse; */
-    background-image: url(/Assets/Illustrations-logo/Wakanda/Pantherwakanda2.png);
+    background: url(Illustrations-logo/Wakanda/Pantherwakanda2.png);
     background-size: 1210px;
     background-repeat: no-repeat;
     /* background-color: red; */
@@ -769,7 +769,7 @@ video{
     width: auto;
 }
 .back-image-enigme{
-    background-image: url(/Assets/Illustrations-logo/Enigme/Pantherenigme1.png);
+    background: url(Illustrations-logo/Enigme/Pantherenigme1.png);
     height: 100%;
     background-size: contain;
     background-position: left top;
@@ -808,7 +808,7 @@ video{
 }
 .content-G-a-b{
     /* border: 2px solid purple; */
-    background-image: url(/Assets/Illustrations-logo/Enigme/Pantherenigme2.png);
+    background: url(Illustrations-logo/Enigme/Pantherenigme2.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 325px;
@@ -826,7 +826,7 @@ video{
     text-align: justify;
 }
 .line{
-    background-image: url(/Assets/Illustrations-logo/Enigme/Pantherenigme3.png);
+    background: url(Illustrations-logo/Enigme/Pantherenigme3.png);
     height: 4px;
     width: 122%;
     /* border: 1px solid red; */
@@ -884,7 +884,7 @@ video{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(/Assets/Illustrations-logo/Enigme/Pantherenigme2.png);
+    background: url(Illustrations-logo/Enigme/Pantherenigme2.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
