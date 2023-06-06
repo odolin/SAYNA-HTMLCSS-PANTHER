@@ -3,22 +3,22 @@
 /********************************************************************************/
 @font-face {
     font-family: 'Panthera';
-    src: url(Assets/Polices/PantheraRegular-MVZ9J.ttf);
+    src: url(Polices/PantheraRegular-MVZ9J.ttf);
 
 }
 @font-face {
     font-family: 'Beyno';
-    src: url(/Assets/Polices/FontsFree-Net-BEYNO.ttf);
+    src: url(Polices/FontsFree-Net-BEYNO.ttf);
 
 }
 @font-face {
     font-family: 'Wakanda';
-    src: url(/Assets/Polices/WakandaForever-Regular.ttf)
+    src: url(Polices/WakandaForever-Regular.ttf)
 
 }
 @font-face {
     font-family: 'Cantarell';
-    src: url(Assets/Polices/Cantarell-Regular.ttf);
+    src: url(Polices/Cantarell-Regular.ttf);
 
 }
 
